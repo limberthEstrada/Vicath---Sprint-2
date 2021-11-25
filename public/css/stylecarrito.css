@@ -542,6 +542,127 @@ input.botonSus {
     box-shadow: -4px 4px 2px #b0b8ff;
 }
 
+.footer-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ; /* space-around dn tablet*/
+    width: 100%; /*sacar en tablet*/
+    padding: 0px; /* en tablet 20px 0px;*/
+    margin-top: 0px;
+    background-color: #FF7070;
+    flex-direction: column;/*row en tablet*/
+    align-items: center;
+}
+
+.imglogos {
+    width: 50%;
+    margin: auto;
+    
+}
+
+/*-----------redes ----------*/
+
+.seguinos {
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+}
+
+.seguinos h4{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.seguinos i{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    width: 20%;
+}
+
+#face
+{
+color: #F3F0D7;
+}
+
+#twitter
+{
+color:#F3F0D7;
+}
+
+#insta
+{
+color: #F3F0D7;
+} 
+
+/*-----------medios de pago ----------*/
+.mediospago {
+    /* display: flex;*/
+    width: 100%; /*cambiar a 33% en tablet*/
+    font-size: 20px;
+    text-align: center;
+}
+
+.imagen-foot {
+    width: 22%;
+}
+
+.imglogos {
+    width: 50%;
+}
+
+.mediospago h4{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.mediospago i{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+} 
+
+/*-----------suscribite ----------*/
+
+.suscribe{
+    width: 70%; /* cambiar a 33%*/
+    font-size: 22px;
+    padding: 10px;
+    background-color: #F3F0D7;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+    text-align: center;
+}
+
+.enemy{
+    padding: 6px;
+}
+input.enemy{
+    width: 90%;
+    padding: 6px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+    font-size: 90%; /*cambiar a 16px en tablet*/
+    margin-bottom: 10px;
+}
+
+button.enemy{
+    font-size: 16px;
+    padding: 6px;
+    color: #F3F0D7;
+    background-color:#FF7070;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+}
+
+.suscribe h4{
+    padding: 10px;
+    font-size: 20px;
+    width: 33%;
+}
+
 @media (min-width: 348px)
 {
     .contenedor-form-general
@@ -946,6 +1067,145 @@ button.botonSus
     border: 0;
     border-radius: 10px;
     box-shadow: -4px 4px 2px #b0b8ff;
+}
+
+.footer-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ; /* space-around dn tablet*/
+    width: 100%; /*sacar en tablet*/
+    padding: 0px; /* en tablet 20px 0px;*/
+    margin-top: 0px;
+    background-color: #FF7070;
+    flex-direction: column;/*row en tablet*/
+    align-items: center;
+}
+
+.imglogos {
+    width: 50%;
+    margin: auto;
+    
+}
+
+/*-----------redes ----------*/
+
+.seguinos {
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+}
+
+.seguinos h4{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.seguinos i{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    width: 20%;
+}
+
+#face
+{
+color: #F3F0D7;
+}
+
+#twitter
+{
+color:#F3F0D7;
+}
+
+#insta
+{
+color: #F3F0D7;
+} 
+
+/*-----------medios de pago ----------*/
+.mediospago {
+    /* display: flex;*/
+    width: 100%; /*cambiar a 33% en tablet*/
+    font-size: 20px;
+    text-align: center;
+}
+
+.imagen-foot {
+    width: 22%;
+}
+
+.imglogos {
+    width: 50%;
+}
+
+.mediospago h4{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.mediospago i{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+} 
+
+/*-----------suscribite ----------*/
+
+.suscribe{
+    width: 70%; /* cambiar a 33%*/
+    font-size: 22px;
+    padding: 10px;
+    background-color: #F3F0D7;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+    text-align: center;
+}
+
+.enemy{
+    padding: 6px;
+}
+input.enemy{
+    width: 90%;
+    padding: 6px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+    font-size: 90%; /*cambiar a 16px en tablet*/
+    margin-bottom: 10px;
+}
+
+button.enemy{
+    font-size: 16px;
+    padding: 6px;
+    color: #F3F0D7;
+    background-color:#FF7070;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+}
+
+.suscribe h4{
+    padding: 10px;
+    font-size: 20px;
+    width: 33%;
+} 
+
+.footer-contenedor {
+        
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0px; 
+    flex-direction: row;
+    width: 100%;
+}
+
+.seguinos , .mediospago , .suscribe{
+    
+    width: 33%;
+}
+
+input.enemy{
+    font-size: 16px;
 }
 
 }
@@ -1527,6 +1787,146 @@ article {
     padding: 10px;
     background-color: #f9ffce;
     border-radius: 26px;
+}
+
+/*FOOTER--------------*/
+.footer-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ; /* space-around dn tablet*/
+    width: 100%; /*sacar en tablet*/
+    padding: 0px; /* en tablet 20px 0px;*/
+    margin-top: 0px;
+    background-color: #FF7070;
+    flex-direction: column;/*row en tablet*/
+    align-items: center;
+}
+
+.imglogos {
+    width: 50%;
+    margin: auto;
+    
+}
+
+/*-----------redes ----------*/
+
+.seguinos {
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+}
+
+.seguinos h4{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.seguinos i{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    width: 20%;
+}
+
+#face
+{
+color: #F3F0D7;
+}
+
+#twitter
+{
+color:#F3F0D7;
+}
+
+#insta
+{
+color: #F3F0D7;
+} 
+
+/*-----------medios de pago ----------*/
+.mediospago {
+    /* display: flex;*/
+    width: 100%; /*cambiar a 33% en tablet*/
+    font-size: 20px;
+    text-align: center;
+}
+
+.imagen-foot {
+    width: 22%;
+}
+
+.imglogos {
+    width: 50%;
+}
+
+.mediospago h4{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.mediospago i{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+} 
+
+/*-----------suscribite ----------*/
+
+.suscribe{
+    width: 70%; /* cambiar a 33%*/
+    font-size: 22px;
+    padding: 10px;
+    background-color: #F3F0D7;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+    text-align: center;
+}
+
+.enemy{
+    padding: 6px;
+}
+input.enemy{
+    width: 90%;
+    padding: 6px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+    font-size: 90%; /*cambiar a 16px en tablet*/
+    margin-bottom: 10px;
+}
+
+button.enemy{
+    font-size: 16px;
+    padding: 6px;
+    color: #F3F0D7;
+    background-color:#FF7070;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+}
+
+.suscribe h4{
+    padding: 10px;
+    font-size: 20px;
+    width: 33%;
+} 
+
+.footer-contenedor {
+        
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0px; 
+    flex-direction: row;
+    width: 100%;
+}
+
+.seguinos , .mediospago , .suscribe{
+    
+    width: 33%;
+}
+
+input.enemy{
+    font-size: 16px;
 }
 
 }

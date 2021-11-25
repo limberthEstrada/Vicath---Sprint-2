@@ -282,63 +282,129 @@ main
     width:100%;
 }
 
-/*-----------FOOTER-----------*/
+/* -----------FOOTER ----------*/
 
-.mediospago {
-    /* display: flex; */
-    width: 33%;
-    font-size: 30px;
-}
-.imagen-foot {
-    width: 22%;
-}
 
 .footer-contenedor {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 40px;
-    margin-top: 40px;
+    justify-content: space-between ; /* space-around dn tablet*/
+    width: 100%; /*sacar en tablet*/
+    padding: 0px; /* en tablet 20px 0px;*/
+    margin-top: 0px;
     background-color: #FF7070;
+    flex-direction: column;/*row en tablet*/
+    align-items: center;
 }
 
 .imglogos {
-    width: 100%;
+    width: 50%;
+    margin: auto;
+    
 }
 
-.mediospago h4
-{
-    margin: 0;
-}
+/*-----------redes ----------*/
 
 .seguinos {
-    font-size: 30px;
-    
-    width: 33%;
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
 }
 
-.suscribe {
+.seguinos h4{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.seguinos i{
+    padding-left: 10px;
+    padding-bottom: 10px;
     font-size: 30px;
-    width: 33%;
+    width: 20%;
 }
 
 #face
 {
-color: blue;
+color: #F3F0D7;
 }
 
 #twitter
 {
-color:rgb(72, 182, 255);
-}
-#insta
-{
-color: rgb(216, 82, 240);
+color:#F3F0D7;
 }
 
-.enemy {
+#insta
+{
+color: #F3F0D7;
+} 
+
+/*-----------medios de pago ----------*/
+.mediospago {
+    /* display: flex;*/
+    width: 100%; /*cambiar a 33% en tablet*/
+    font-size: 20px;
+    text-align: center;
+}
+
+.imagen-foot {
+    width: 22%;
+}
+
+.imglogos {
+    width: 50%;
+}
+
+.mediospago h4{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.mediospago i{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+} 
+
+/*-----------suscribite ----------*/
+
+.suscribe{
+    width: 70%; /* cambiar a 33%*/
+    font-size: 22px;
+    padding: 10px;
+    background-color: #F3F0D7;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+    text-align: center;
+}
+
+.enemy{
     padding: 6px;
 }
+input.enemy{
+    width: 90%;
+    padding: 6px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+    font-size: 90%; /*cambiar a 16px en tablet*/
+    margin-bottom: 10px;
+}
+
+button.enemy{
+    font-size: 16px;
+    padding: 6px;
+    color: #F3F0D7;
+    background-color:#FF7070;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+}
+
+.suscribe h4{
+    padding: 10px;
+    font-size: 20px;
+    width: 33%;
+} 
 
 /*--------adaptaciones------------*/
 
@@ -395,6 +461,24 @@ color: rgb(216, 82, 240);
     div.burger-menu{
         display: none;
     }
+
+    .footer-contenedor {
+        
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px 0px; 
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .seguinos , .mediospago , .suscribe{
+        
+        width: 33%;
+    }
+
+    input.enemy{
+        font-size: 16px;
+    }
 }
 
 @media (min-width:769px){
@@ -441,65 +525,4 @@ color: rgb(216, 82, 240);
     .carrusel-caja img{
     width:100%;
     }
-
-    #iconCuenta
-{
-    position: relative;
-    cursor: pointer;
-}
-
-.login_desplegable_header
-{
-    display: block;
-    text-align: center;
-    margin-bottom: 14px;
-}
-
-.login_desplegable {
-    position: absolute;
-    left: -60px;
-    box-sizing: border-box;
-    transform: translateX(-10%);
-    opacity: 0;
-    width: 210px;
-    background-color: white;
-    padding: 5px;
-    z-index: -2;
-    border-top: 2px solid #2C6460;
-    box-shadow: 0 3px 6px #565656;
-    transition: all 1s;
-}
-
-
-
-.login_desplegable_login
-{
-    display:block;
-    text-align: center;
-}
-
-.login_desplegable_signup
-{
-    display:block;
-    text-align: center;  
-}
-
-.inputCheck /*pa borrar ese feo checkbox*/
-{
-    position: absolute;
-    display: none;
-}
-
-
-
-.top-header, .button-header, footer{
-    transition: background-color 0.1s;
-}
-
-.inputCheck:checked + .login_desplegable
-{
-
-    opacity: 1;
-    z-index: 10;
-}
 }

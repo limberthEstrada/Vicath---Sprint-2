@@ -231,19 +231,18 @@ p h2{
 }
 
 
-
-
-/*-----------FOOTER -----------*/
+/* -----------FOOTER ----------*/
 
 
 .footer-contenedor {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0px;
+    justify-content: space-between ; /* space-around dn tablet*/
+    width: 100%; /*sacar en tablet*/
+    padding: 0px; /* en tablet 20px 0px;*/
     margin-top: 0px;
     background-color: #FF7070;
-    flex-direction: column;
+    flex-direction: column;/*row en tablet*/
     align-items: center;
 }
 
@@ -253,7 +252,7 @@ p h2{
     
 }
 
-/*------seguinos----------*/
+/*-----------redes ----------*/
 
 .seguinos {
     font-size: 22px;
@@ -271,37 +270,73 @@ p h2{
     padding-bottom: 10px;
     font-size: 30px;
     width: 20%;
+}
+
+#face
+{
+color: #F3F0D7;
+}
+
+#twitter
+{
+color:#F3F0D7;
+}
+
+#insta
+{
+color: #F3F0D7;
 } 
 
-#face{
-    color: #F3F0D7;
-}
-
-#twitter{
-    color:#F3F0D7;
-}
-
-#insta{
-    color: #F3F0D7;
-}
-/*---------suscribite------*/
-
-.suscribe {
-    font-size: 22px;
-    width: 100%;
+/*-----------medios de pago ----------*/
+.mediospago {
+    /* display: flex;*/
+    width: 100%; /*cambiar a 33% en tablet*/
+    font-size: 20px;
     text-align: center;
+}
+
+.imagen-foot {
+    width: 22%;
+}
+
+.imglogos {
+    width: 50%;
+}
+
+.mediospago h4{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.mediospago i{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+} 
+
+/*-----------suscribite ----------*/
+
+.suscribe{
+    width: 70%; /* cambiar a 33%*/
+    font-size: 22px;
     padding: 10px;
     background-color: #F3F0D7;
     border-radius: 10px;
     box-shadow: -4px 4px 2px #B0B8FF;
+    text-align: center;
 }
 
+.enemy{
+    padding: 6px;
+}
 input.enemy{
+    width: 90%;
     padding: 6px;
     border: 0;
     border-radius: 10px;
     box-shadow: -4px 4px 2px #B0B8FF;
-    font-size: 16px;
+    font-size: 90%; /*cambiar a 16px en tablet*/
+    margin-bottom: 10px;
 }
 
 button.enemy{
@@ -318,35 +353,10 @@ button.enemy{
     padding: 10px;
     font-size: 20px;
     width: 33%;
-}
+} 
 
-/*-------medios de pago------*/
 
-.mediospago h4
-{
-    margin: 0;
-}
 
-.mediospago {
-    /* display: flex; */
-    width: 100%;
-    font-size: 20px;
-    text-align: center;
-}
-.imagen-foot {
-    width: 22%;
-}
-
-.mediospago h4{
-    padding: 10px;
-    font-size: 20px;
-}
-
-.mediospago i{
-    padding-left: 10px;
-    padding-bottom: 10px;
-    font-size: 30px;
-}
 
 /*-------tablet-----*/
 
@@ -377,33 +387,23 @@ button.enemy{
     }
 
     /* footer */
+
     .footer-contenedor {
+        
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px 0px; 
         flex-direction: row;
+        width: 100%;
     }
 
-    .mediospago {
-        /* display: flex; */
-        width: 33%;
-        font-size: 20px;
-    }
-
-    .imagen-foot {
-        width: 22%;
-    }
-
-    .seguinos {
-        font-size: 30px;
-    
+    .seguinos , .mediospago , .suscribe{
+        
         width: 33%;
     }
 
-    .suscribe {
-        font-size: 30px;
-        width: 33%;
-    }
-
-    .enemy {
-        padding: 6px;
+    input.enemy{
+        font-size: 16px;
     }
 }
 

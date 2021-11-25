@@ -239,11 +239,10 @@ carrito {
 
 
 
-/*acá va lo del carrusel*/
-
-
-
-
+/*-------------------carrusel-------------*/
+.carrusel-caja{
+    display: none;
+}
 
 
 
