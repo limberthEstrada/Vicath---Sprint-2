@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body
+{
+    font-family: 'Roboto', sans-serif;
+    background-color: #CEE5D0;
+    color: #536FFF;
+}
+
 main{
     display: flex;
     flex-wrap: wrap; /* CAMBIAR EN LA VERSION PC*/

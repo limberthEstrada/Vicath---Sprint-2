@@ -479,6 +479,62 @@ button.enemy{
     input.enemy{
         font-size: 16px;
     }
+
+    #iconCuenta
+    {
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .login_desplegable_header
+    {
+        display: block;
+        text-align: center;
+        margin-bottom: 14px;
+    }
+    
+    
+    
+    .login_desplegable {
+        position: absolute;
+        left: -34px;
+        box-sizing: border-box;
+        transform: translateX(-10%);
+        opacity: 0;
+        width: 107px;
+        background-color: white;
+        padding: 5px;
+        z-index: -2;
+        border-top: 2px solid #2C6460;
+        box-shadow: 0 3px 6px #565656;
+        transition: all 1s;
+    }
+    
+    .login_desplegable_login
+    {
+        display:block;
+        text-align: center;
+    }
+    
+    .login_desplegable_signup
+    {
+        display:block;
+        text-align: center;  
+    }
+    
+    .inputCheck /*pa borrar ese feo checkbox*/
+    {
+        position: absolute;
+        display: none;
+    }
+    
+    .inputCheck:checked + .login_desplegable
+    {
+    
+        opacity: 1;
+        z-index: 10;
+    }
+    
 }
 
 @media (min-width:769px){
@@ -517,6 +573,7 @@ button.enemy{
         width:25%;
     }
 
+    /*
     .carrusel-caja{
         display: flex;
         width: 100%;
@@ -524,5 +581,64 @@ button.enemy{
 
     .carrusel-caja img{
     width:100%;
+    }
+
+    */
+
+    .slider
+    {
+        width: 100%;
+        overflow: hidden;
+    
+    }
+    
+    .slider ul
+    {
+        padding: 0;
+        display: flex;
+        width: 400%;
+        animation: cambiox 13s infinite alternate;
+    
+    }
+    
+    .slider li
+    {
+        width: 100%;
+        list-style: none;
+    }
+    
+    .slider img
+    {
+        width: 100%;
+    }
+    
+    @keyframes cambiox
+    {
+        0% {margin-left:0;}
+        20% {margin-left:0;}
+        /*se tarda 1 seg en una imagen a otra 20x0.05*/
+        25% {margin-left:-100%;}
+        45% {margin-left:-100%;}
+    
+        50% {margin-left:-200%;}
+        70% {margin-left:-200%;}
+    
+        75% {margin-left:-300%;}
+        100% {margin-left:-300%;}
+    }
+
+    .login_desplegable {
+        position: absolute;
+        left: -60px;
+        box-sizing: border-box;
+        transform: translateX(-10%);
+        opacity: 0;
+        width: 210px;
+        background-color: white;
+        padding: 5px;
+        z-index: -2;
+        border-top: 2px solid #2C6460;
+        box-shadow: 0 3px 6px #565656;
+        transition: all 1s;
     }
 }
