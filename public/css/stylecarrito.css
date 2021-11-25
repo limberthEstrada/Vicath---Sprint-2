@@ -647,6 +647,22 @@ input.enemy{
     margin-bottom: 10px;
 }
 
+button.enemy{
+    font-size: 16px;
+    padding: 6px;
+    color: #F3F0D7;
+    background-color:#FF7070;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+}
+
+.suscribe h4{
+    padding: 10px;
+    font-size: 20px;
+    width: 33%;
+}
+
 input.enemy {
     width: 90%;
     padding: 6px;
@@ -658,16 +674,9 @@ input.enemy {
     margin: auto;
     margin-bottom: 10px;
 }
-
 button.enemy
 {
     margin: auto;
-}
-
-.suscribe h4{
-    padding: 10px;
-    font-size: 20px;
-    width: 33%;
 }
 
 @media (min-width: 348px)
