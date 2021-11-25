@@ -121,7 +121,7 @@ div.burger-menu{
 }
 
 /*-------------------carrusel-------------*/
-.carrusel-caja{
+.slider{
     display: none;
 }
 /*----------------------MAIN----------------------*/
@@ -587,6 +587,7 @@ button.enemy{
 
     .slider
     {
+        display: block;
         width: 100%;
         overflow: hidden;
     
