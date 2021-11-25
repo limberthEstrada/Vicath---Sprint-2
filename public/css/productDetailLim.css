@@ -1,0 +1,414 @@
+* {
+    margin: 0px; /*centra todo*/
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    background-color: #CEE5D0;
+    color: rgb(63, 63, 235);
+}
+
+
+/*HEADER y FOOTER----------------------------------------(inicio)*/
+
+/*logo - busqueda - iconos*/
+div.top-header
+{
+    background-color: #FF7070;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.logo
+{
+    display: flex;
+    width: 15%;
+}
+.imagen-logo
+{
+    width: 40%;
+    
+}
+
+.imagen-logo, .form-busqueda, .cart, .login, .darkmode
+{
+    align-self: center;
+}
+
+/*barra de navegacion*/
+div.button-header
+{
+    border-top: 1px solid #000;
+    background-color: #FF7070
+}
+
+div.button-header nav ul
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 5px;
+}
+.button-header ul li{
+    list-style-type: none;
+}
+
+.button-header ul li a{
+    text-decoration: none;
+    color: #ffff;;
+}
+
+
+
+.iconosHeader {
+    display: flex;
+    align-items: center;
+    width: 22%;
+    justify-content: space-around;
+}
+
+.iconH i {
+    color: #000;
+    font-size: 31px;
+}
+
+
+
+
+
+
+.mediospago {
+    /* display: flex; */
+    width: 33%;
+    font-size: 30px;
+}
+.imagen-foot {
+    width: 22%;
+}
+
+.footer-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+    
+    background-color: #FF7070;
+}
+
+.imglogos {
+    width: 100%;
+}
+
+.mediospago h4
+{
+    margin: 0;
+}
+
+.seguinos {
+    font-size: 30px;
+    
+    width: 10%;
+}
+
+.suscribe {
+    font-size: 30px;
+    width: 33%;
+}
+
+#face
+{
+color: blue;
+}
+
+#twitter
+{
+color:rgb(72, 182, 255);
+}
+#insta
+{
+color: rgb(216, 82, 240);
+}
+
+.botonSus {
+    padding: 6px;
+    border-radius: 40px;
+}
+
+footer{
+    background-color: #FF7070;
+    
+}
+
+
+
+
+
+.medPagoCont {
+    display: flex;
+    width: 100%;
+}
+
+
+
+#buscarxD
+{
+    border-radius: 40px;
+    padding: 5px;
+}
+
+#iconCuenta
+{
+    position: relative;
+    cursor: pointer;
+}
+
+.login_desplegable_header
+{
+    display: block;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.login_desplegable {
+    position: absolute;
+    left: -60px;
+    box-sizing: border-box;
+    transform: translateX(-10%);
+    opacity: 0;
+    width: 210px;
+    background-color: white;
+    padding: 5px;
+    z-index: -2;
+    border-top: 2px solid #2C6460;
+    box-shadow: 0 3px 6px #565656;
+    transition: all 1s;
+}
+
+
+
+.login_desplegable_login
+{
+    display:block;
+    text-align: center;
+}
+
+.login_desplegable_signup
+{
+    display:block;
+    text-align: center;  
+}
+
+.inputCheck /*pa borrar ese feo checkbox*/
+{
+    position: absolute;
+    display: none;
+}
+
+
+
+.top-header, .button-header, footer{
+    transition: background-color 0.1s;
+}
+
+.inputCheck:checked + .login_desplegable
+{
+
+    opacity: 1;
+    z-index: 10;
+}
+
+
+
+
+.top-header div.form-busqueda {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.form-busqueda form{
+    width: 100%;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.form-busqueda input{
+    width: 80%;
+    border:0;
+    background-color: #F3F0D7;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.form-busqueda button{
+    width: 5%;
+    border:0;
+    background-color: #F3F0D7;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+
+div.button-header
+{
+    background-color: #FED2AA;
+}
+
+div.button-header nav ul
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 5px;
+}
+.button-header ul li{
+    list-style-type: none;
+}
+
+.button-header ul li a{
+    text-decoration: none;
+    color: #FF7070;
+}
+
+.iconosHeader {
+    display: flex;
+    align-items: center;
+    width: 22%;
+    justify-content: space-around;
+    
+}
+
+.iconH i {
+    color: #000;
+    font-size: 20px;
+}
+
+
+.suscribe{
+    padding: 10px;
+    background-color: #F3F0D7;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+}
+
+input.botonSus{
+    padding: 6px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+}
+
+button.botonSus{
+    padding: 6px;
+    color: #F3F0D7;
+    background-color:#FF7070;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+}
+
+
+.suscribe h4{
+    padding: 10px;
+    font-size: 15px;
+    width: 33%;
+}
+
+.suscribe {
+    padding: 21px;
+    background-color: #F3F0D7;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #b0b8ff;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 22px; */
+}
+
+.suscribe h4 {
+    padding: 10px;
+    font-size: 15px;
+    width: 100%;
+}
+
+input.botonSus {
+    padding: 6px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #b0b8ff;
+    width: 50%;
+}
+
+button.botonSus {
+    padding: 6px;
+    color: #F3F0D7;
+    background-color: #FF7070;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #b0b8ff;
+    width: 50%;
+}
+
+/*------------------------------------------------------------------(fin)---*/
+
+
+
+
+/*---------MAIN-------------------*/
+
+.imagenProduct {
+    width: 50%;
+    padding: 48px;
+}
+
+.imagenesContenedor
+{
+    width: 100%;
+}
+
+.imagenGeneral
+{
+width: 100%;
+}
+
+.imagenesHijas {
+    width: 33.4%;
+    display: flex;
+}
+
+.cartuchera
+{
+    width: 100%;
+}
+
+#padre
+{
+    width: 100%;
+}
+
+#hija
+{
+    width: 100%;
+}
+
+.datosDelProducto
+{
+    width: 50%;
+}
+
+main{
+    display: flex;
+}
+
+.titulo
+{
+
+}
+
+.precio
+{
+    
+}

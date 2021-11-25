@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicath - Libreria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+        <div class= "logo">
+            <a href="/"><img class="imagen-logo" src="./images/logo.png" alt="Logo de pagina"></a>
+        </div>
+        <div class="form-busqueda">
+            <form action="#" method="get">
+                <input type="text" placeholder="Buscar productos">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="iconosHeader">
+        <div class="iconH">
+            <a href="/carrito">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+        <div class="iconH" id="iconCuenta">
+            <label  for="clickk">
+                <i class="fas fa-user-circle" ></i> 
+            </label>
+            <input type="checkbox" class="inputCheck" id="clickk">
+            <div class="login_desplegable">
+                <span class="login_desplegable_header">Mi cuenta</span>
+                <a href="/login" class="login_desplegable_login">Iniciar sesión</a>
+                <a href="/register" class="login_desplegable_signup">Registrate pa</a>
+            </div>
+        </div>
+        <div class="iconH">
+            <i class="fas fa-moon"></i>  
+            <a href="#">
+                <i class="fas fa-toggle-on"></i>
+            </a>
+        </div>
+        </div>
+        <div class="burger-menu">
+            <i class="fa fa-bars burger"></i>
+        </div>
+        </div>
+        <div class="button-header">
+        <nav>
+            <ul>
+                <li><a href="#">Novedades</a></li>
+                <li><a href="#">Oficina</a></li>
+                <li><a href="#">Universitario</a></li>
+                <li><a href="#">Escolares</a></li>
+                <li><a href="#">Artistica</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="carrusel-caja">
+        <img src="/images/carrusel.png" class="carrusel">
+    </div>
+    </header>
+    <main>
+        <section class="filtrado-contenedor">
+            <div class="filtrado">
+            <h3>Filtrar por:</h3>
+            <form action="/" method="get" class="filtrar-marca">
+                <div>
+                    <h4><label for="marcas"> Marcas <br></label></h4>
+                    <select name="marcas">
+                        <option value="marca">---marca---</option> 
+                        <option value="marca-1">marca 1</option> 
+                        <option value="marca-2">marca 2</option>
+                        <option value="marca-3">marca 3</option> 
+                        <option value="marca-4">marca 4</option> 
+                    </select> 
+                </div>
+                <div>
+                    <h4><label for="tipo-producto"> Tipo de producto <br></label></h4>
+                    <select name="tipo-producto">
+                        <option value="tipo">---tipo---</option> 
+                        <option value="tipo-1">tipo 1</option> 
+                        <option value="tipo-2">tipo 2</option>
+                        <option value="tipo-3">tipo 3</option> 
+                        <option value="tipo-4">tipo 3</option> 
+                    </select>
+                </div>
+                <div>
+                    <h4><label for="colores"> Color <br></label></h4>
+                    <select name="colores">
+                        <option value="color">---color---</option> 
+                        <option value="color-1">color 1</option> 
+                        <option value="color-2">color 2</option>
+                        <option value="color-3">color 3</option> 
+                        <option value="color-4">color 3</option> 
+                    </select>
+                </div>
+                <div>
+                    <h4><label for="modelo"> Modelo <br></label></h4>
+                    <select name="modelo">
+                        <option value="modelo">---modelo---</option> 
+                        <option value="modelo-1">modelo 1</option> 
+                        <option value="modelo-2">modelo 2</option>
+                        <option value="modelo-3">modelo 3</option> 
+                        <option value="modelo-4">modelo 3</option> 
+                    </select>
+                </div>
+                <div>
+                    <h4><label for="material"> Material <br></label></h4>
+                    <select name="material">
+                        <option value="material">---material---</option> 
+                        <option value="material-1">material 1</option> 
+                        <option value="material-2">material 2</option>
+                        <option value="material-3">material 3</option> 
+                        <option value="material-4">material 3</option> 
+                    </select>
+                </div>
+            </form>
+            </div>
+        </section>
+        <section class="productos">
+            <h3>Productos destacados</h3>
+            <div class="destacados">
+            <article>
+                <img src="./images/cartuchera.jpg" class="cuaderno" >
+                <div class="main-article">
+                    <h4>Titulo producto</h4>
+                    <p>Descripcion producto</p>
+                    <div class="contenedor-precio">
+                        <p class="precio">$$$ </p>
+                        <button><i class="fas fa-cart-plus"></i></button>
+                   </div>
+                </div>
+            </article>
+            <article>
+                <img src="./images/cartuchera1.jpg" class="marcadores-gel">
+                <div class="main-article">
+                   <h4>Titulo producto</h4>
+                    <p>Descripcion producto</p>
+                    <div class="contenedor-precio">
+                        <p class="precio">$$$ </p>
+                        <button><i class="fas fa-cart-plus"></i></button>
+                   </div>
+                </div>
+            </article>
+            <article>
+                <img src="./images/hojas.jpg" class="marcadores-pastel">
+                <div class="main-article">
+                    <h4>Titulo producto</h4>
+                    <p>Descripcion producto</p>
+                    <div class="contenedor-precio">
+                        <p class="precio">$$$ </p>
+                        <button><i class="fas fa-cart-plus"></i></button>
+                   </div>
+                </div>
+            </article>
+            <article>
+                <img src="./images/lapicera.jpg" class="cuadernos">
+                <div class="main-article">
+                    <h4>Titulo producto</h4>
+                    <p>Descripcion producto</p>
+                    <div class="contenedor-precio">
+                         <p class="precio">$$$ </p>
+                         <button><i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <h3>Productos en oferta</h3>
+        <div class="ofertas">
+            
+            <article>
+                <img src="./images/marcadores.jpg" class="cuaderno" >
+                <div class="main-article">
+                    <h4>Titulo producto</h4>
+                    <p>Descripcion producto</p>
+                    <div class="contenedor-precio">
+                        <p class="precio">$$$ </p>
+                        <button><i class="fas fa-cart-plus"></i></button>
+                   </div>   
+                </div>
+            </article>
+            <article>
+                <img src="./images/marcadoresPastel.jpg" class="marcadores-gel">
+                <div class="main-article">
+                   <h4>Titulo producto</h4>
+                    <p>Descripcion producto</p>
+                    <div class="contenedor-precio">
+                        <p class="precio">$$$ </p>
+                        <button><i class="fas fa-cart-plus"></i></button>
+                   </div> 
+                </div>
+            </article>
+            <article>
+                <img src="./images/tijeras.jpg" class="marcadores-pastel">
+                <div class="main-article">
+                    <h4>Titulo producto</h4>
+                    <p>Descripcion producto</p>
+                    <div class="contenedor-precio">
+                        <p class="precio">$$$ </p>
+                        <button><i class="fas fa-cart-plus"></i></button>
+                   </div>
+                </div>
+            </article>
+            <article>
+                <img src="./images/lapicera.jpg" class="cuadernos">
+                <div class="main-article">
+                    <h4>Titulo producto</h4>
+                    <p>Descripcion producto</p>
+                    <div class="contenedor-precio">
+                        <p class="precio">$$$ </p>
+                        <button><i class="fas fa-cart-plus"></i></button>
+                   </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div class="footer-contenedor">
+        <div class="seguinos">
+            <h4> Seguinos</h4>
+            <i class="fab fa-facebook" id="face"></i>
+            <i class="fab fa-instagram" id="insta"></i>
+            <i class="fab fa-twitter" id="twitter"></i>
+        </div>
+        <div class="suscribe">
+            <h4> Suscribite</h4>
+            <input type="email" placeholder="Ingresa tu e-mail" class="enemy"> 
+            <button class="enemy"> Suscribirme</button>
+        </div>
+       <div class="mediospago">
+           <h4>Medios de pago</h4>
+           <div class="imglogos">
+           <img src="/images/amazon.png" alt="" class="imagen-foot">
+           <img src="/images/mcard.png" alt="" class="imagen-foot">
+           <img src="/images/visa.png" alt="" class="imagen-foot">
+           <img src="/images/paypal.png" alt="" class="imagen-foot">
+        </div>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
